@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 97vh;
+            gap:2rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+        span {
+
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: flex;
+            border: solid blue 2px;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+            font-weight: bold;
+            font-size: 6rem;
+            cursor: pointer;
+            transition: .4s;
+            
+        
+        }
+
+        span:hover {
+
+            background-color: blueviolet;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    
+<span>1</span>
+<span>2</span>
+<span>3</span>
+<span>4</span>
+<span>5</span>
+
+</body>
+
+<script>
+
+    let box = document.querySelectorAll('span')
+    let corpo = document.querySelector('body')
+    
+
+    box[0].addEventListener('click', () => {
+        
+        
+
+        if (sessionStorage.getItem("nome") === null) {
+            sessionStorage.setItem('nome', 'Wesley')
+            corpo.innerHTML = "Ganhou poha nenhum"
+
+
+        }
+        
+            else if (sessionStorage.getItem("nome") === 'Wesley') {
+            corpo.innerHTML = "Por que ta tentando denovo Mariana?"
+        }
+        
+    })
+
+    box[1].addEventListener('click', () => {
+        if (sessionStorage.getItem("nome") === null) {
+            sessionStorage.setItem('nome', 'Wesley')
+            corpo.innerHTML = "Ganhou poha nenhum"
+
+
+        }
+        
+            else if (sessionStorage.getItem("nome") === 'Wesley') {
+            corpo.innerHTML = "Por que ta tentando denovo Mariana?"
+        }
+    })
+
+    box[2].addEventListener('click', () => {
+        if (sessionStorage.getItem("nome") === null) {
+            sessionStorage.setItem('nome', 'Wesley')
+            corpo.innerHTML = "Ganhou poha nenhum"
+
+
+        }
+        
+            else if (sessionStorage.getItem("nome") === 'Wesley') {
+            corpo.innerHTML = "Por que ta tentando denovo Mariana?"
+        }
+    })
+
+    box[3].addEventListener('click', () => {
+        if (sessionStorage.getItem("nome") === null) {
+            sessionStorage.setItem('nome', 'Wesley')
+            corpo.innerHTML = "Ganhou poha nenhum"
+
+
+        }
+        
+            else if (sessionStorage.getItem("nome") === 'Wesley') {
+            corpo.innerHTML = "Por que ta tentando denovo Mariana?"
+        }
+    })
+
+    box[4].addEventListener('click', () => {
+        if (sessionStorage.getItem("nome") === null) {
+            sessionStorage.setItem('nome', 'Wesley')
+            corpo.innerHTML = "Ganhou poha nenhum"
+
+
+        }
+        
+            else if (sessionStorage.getItem("nome") === 'Wesley') {
+            corpo.innerHTML = "Por que ta tentando denovo Mariana?"
+        }
+    })
+
+
+
+</script>
+</html>
